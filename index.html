@@ -12,6 +12,7 @@
             text-align: center;
             width: 100%;
             overflow-x: hidden;
+            background-image: url(pattern.jpg);
         }
         #contactus{
             display: block;
@@ -23,11 +24,11 @@
             font-size: 35px;
             font-family: monospace;
             text-decoration: none;
-            color: rgb(1, 250, 1);
+            color: rgb(0, 177, 0);
         }
         #header{
             width: 100%;
-            padding: 96px 0;
+            padding: 95px 0;
             text-align: center;
             margin: 0;
             background-repeat: no-repeat;
@@ -35,8 +36,8 @@
         }
         #header-title{
             display: inline;
-            color: rgb(72, 224, 72);
-            font-family: monospace;
+            color: rgb(78, 209, 52);
+            font-family: myfont;
             font-weight: 100;
             font-size: 60px;
             margin-top: 80px;
@@ -54,12 +55,12 @@
             padding: 50px;
         }
         .items:hover{
-            background-color: rgb(51, 51, 51);
+            background-color: rgba(0, 0, 0, 0.15);
         }
 
 
         #footer{
-            background-color: #111;
+            background-color: rgb(2, 58, 0);
             justify-content: center;
             padding: 10px;
             text-align: center;
@@ -70,11 +71,38 @@
             display: block;
             height: auto;
             width: fit-content;
-            color: rgb(145, 145, 145);
+            color: rgb(4, 114, 0);
             margin: 0 auto;
             font-size: 14px;
         }
-        
+        @font-face {
+            font-family: myfont;
+            src: url(SourceCodePro-ExtraLight.ttf);
+        }
+
+        @media screen and (max-width : 768px) {
+            #header{
+                padding: 125px;
+            }
+            #header-title{
+                font-size: 35px;
+                float: right;
+                font-family: monospace;
+                bottom: 10px;
+                right: 150px;
+                position: relative;
+                color: rgb(5, 138, 0);
+            }
+            #contactus{
+                font-size: 20px;
+                top: 20px;
+                font-family: myfont;
+            }
+            .items{
+                font-size: 25px;
+            }
+
+        }
     </style>
 </head>
 
